@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85b72ec-f38a-4360-b077-7c720c3f5342" name="Default Changelist" comment="" />
+    <list default="true" id="c85b72ec-f38a-4360-b077-7c720c3f5342" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Broker/MessageBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/MessageBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/TopicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/TopicWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Producer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producer/Producer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cJIqjitGXcJk8sQ7eZDCCL1mpl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,6 +85,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590326964430" />
+    <state x="545" y="262" width="276" height="292" key="Github.ShareDialog" timestamp="1590338752273">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="545" y="262" width="276" height="292" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1590338752273" />
+    <state x="379" y="62" key="Github.UntrackedFilesDialog" timestamp="1590338764947">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590338764947" />
     <state width="1323" height="202" key="GridCell.Tab.0.bottom" timestamp="1590328001365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

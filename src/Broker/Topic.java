@@ -30,12 +30,12 @@ public class Topic {
      * This method is used to get the first value in the topic file which is not read in the given group yet, and serve it for the appropriate consumer.
      * @return the value of the first remained item.
      */
-    public int get(String groupName, String consumerName) {
+    public int getValue(String groupName, String consumerName) {
         if(!topicReaders.containsKey(groupName)) {
             addGroup(groupName);
         }
 
-        return topicReaders.get(groupName).get(consumerName);
+        return topicReaders.get(groupName).getValue(consumerName);
     }
 
     /**
@@ -43,7 +43,7 @@ public class Topic {
      * @param value the value to be put at the end of the topic file
      * @return Nothing.
      */
-    public void put(String producerName, int value) {
-        topicWriter.put(producerName, value);
+    public void putValue(String producerName, int value) {
+        topicWriter.putValue(producerName, value);
     }
 }

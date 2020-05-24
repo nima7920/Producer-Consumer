@@ -23,14 +23,14 @@ public class Producer extends Thread{
         try {
             Scanner scanner = new Scanner(producerFile);
             while(scanner.hasNext()) {
-                put(scanner.nextInt());
+                putValue(scanner.nextInt());
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    private void put(int value) {
-        messageBroker.put(topicName, producerName, value);
+    private void putValue(int value) {
+        messageBroker.putValue(topicName, producerName, value);
     }
 }

@@ -15,7 +15,7 @@ public class TopicReader {
         //To Do - Generate topicFile
     }
 
-    public int get(String consumerName) {
+    public int getValue(String consumerName) {
         int value = 0;
         //To Do - Read next value from topicFile and return the value
         //To Do - Handle the transaction constraints

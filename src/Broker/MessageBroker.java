@@ -10,17 +10,17 @@ public class MessageBroker {
         topics.put(name, new Topic(name));
     }
 
-    public void put(String topic, String producerName, int value) {
+    public void putValue(String topic, String producerName, int value) {
         if(!topics.containsKey(topic)) {
             addTopic(topic);
         }
-        topics.get(topic).put(producerName, value);
+        topics.get(topic).putValue(producerName, value);
     }
 
-    public int get(String topic, String groupName, String consumerName) throws NoSuchTopicException {
+    public int getValue(String topic, String groupName, String consumerName) throws NoSuchTopicException {
         if(!topics.containsKey(topic))
             throw new NoSuchTopicException(topic);
 
-        return topics.get(topic).get(groupName,consumerName);
+        return topics.get(topic).getValue(groupName,consumerName);
     }
 }

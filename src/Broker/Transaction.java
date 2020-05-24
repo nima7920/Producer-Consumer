@@ -15,7 +15,7 @@ public class Transaction {
         values = new LinkedList<>();
     }
 
-    void put(int value) {
+    void putValue(int value) {
         values.add(value);
     }
 

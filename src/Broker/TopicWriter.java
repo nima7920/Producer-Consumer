@@ -22,7 +22,7 @@ public class TopicWriter {
         }
     }
 
-    public void put(String producerName, int value) {
+    public void putValue(String producerName, int value) {
         if(value <= 0) {
             handleTransactionOperation(producerName, value);
         }
@@ -46,7 +46,7 @@ public class TopicWriter {
 
     private synchronized void handleInsertOperation(String producerName, int value) {
         if(transactions.containsKey(producerName)) {
-            transactions.get(producerName).put(value);
+            transactions.get(producerName).putValue(value);
         }
         else {
             writeValue(value);
