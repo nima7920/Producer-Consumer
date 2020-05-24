@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85b72ec-f38a-4360-b077-7c720c3f5342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Broker/MessageBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/MessageBroker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Broker/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Broker/TopicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/c.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Broker/TopicWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Broker/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producer/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +73,25 @@
       <option name="presentableId" value="Default" />
       <updated>1590240462007</updated>
     </task>
+    <task id="LOCAL-00001" summary="Methods reNamed">
+      <created>1590339649066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590339649066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Methods reNamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Methods reNamed" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590241353511">
+    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590339647704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590241353511" />
+    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590339647704" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1590326964430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -93,22 +104,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590338764947" />
-    <state width="1323" height="202" key="GridCell.Tab.0.bottom" timestamp="1590328001365">
+    <state width="1323" height="160" key="GridCell.Tab.0.bottom" timestamp="1590350121653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="202" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590328001365" />
-    <state width="1323" height="202" key="GridCell.Tab.0.center" timestamp="1590328001365">
+    <state width="1323" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590350121653" />
+    <state width="1323" height="160" key="GridCell.Tab.0.center" timestamp="1590350121652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="202" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590328001365" />
-    <state width="1323" height="202" key="GridCell.Tab.0.left" timestamp="1590328001365">
+    <state width="1323" height="160" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590350121652" />
+    <state width="1323" height="160" key="GridCell.Tab.0.left" timestamp="1590350121652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="202" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590328001365" />
-    <state width="1323" height="202" key="GridCell.Tab.0.right" timestamp="1590328001365">
+    <state width="1323" height="160" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590350121652" />
+    <state width="1323" height="160" key="GridCell.Tab.0.right" timestamp="1590350121652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="202" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590328001365" />
+    <state width="1323" height="160" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590350121652" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590241382951">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -9,7 +9,7 @@ public class TopicWriter {
     RandomAccessFile buffer;
 
     private Topic topic;
-    private HashMap<String, Transaction> transactions;
+    private volatile HashMap<String, Transaction> transactions;
 
     TopicWriter(Topic topic) {
         this.topic=topic;
@@ -44,12 +44,14 @@ public class TopicWriter {
         }
     }
 
-    private synchronized void handleInsertOperation(String producerName, int value) {
+    private void handleInsertOperation(String producerName, int value) {
         if(transactions.containsKey(producerName)) {
             transactions.get(producerName).putValue(value);
         }
         else {
-            writeValue(value);
+            synchronized (this) {
+                writeValue(value);
+            }
         }
     }
 
@@ -73,10 +75,12 @@ public class TopicWriter {
      * This method is used to end the transaction for putting a its values inside the file.
      * @return Nothing.
      */
-    private synchronized void commitTransaction(String producerName) {
+    private void commitTransaction(String producerName) {
         if(transactions.containsKey(producerName)) {
-            transactions.get(producerName).commit();
-            transactions.remove(producerName);
+            synchronized (this) {
+                transactions.get(producerName).commit();
+                transactions.remove(producerName);
+            }
         }
         else {
             //To Do - Log the problem in committing a non-existing transaction.
@@ -96,7 +100,7 @@ public class TopicWriter {
         }
     }
 
-    public void writeValue(int value) {
+    public synchronized void writeValue(int value) {
         //To Do - Put the given value at the end of the topicFile
         try {
             buffer.writeInt(value);
