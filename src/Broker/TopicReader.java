@@ -1,5 +1,6 @@
 package Broker;
 
+import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class TopicReader {
@@ -13,6 +14,12 @@ public class TopicReader {
         this.topic = topic;
         this.groupName=groupName;
         //To Do - Generate topicFile
+        try{
+            topicFile=new RandomAccessFile(this.topic.getTopicFile(),"r");
+
+        }catch (IOException e){
+
+        }
     }
 
     public int getValue(String consumerName) {

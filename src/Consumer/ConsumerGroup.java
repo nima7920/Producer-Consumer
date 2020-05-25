@@ -46,12 +46,13 @@ public class ConsumerGroup extends Thread{
             e.printStackTrace();
         }
 
-        printWriter.close();
     }
 
     public void performAction(Consumer consumer, int value) {
-        printWriter.println("Consumer with name " + consumer.getConsumerName() + " read the value " + value);
-        printWriter.flush();
+        if(value>0) {
+            printWriter.println("Consumer with name " + consumer.getConsumerName() + " read the value " + value);
+            printWriter.flush();
+        }
     }
 
     public String getGroupName() {
