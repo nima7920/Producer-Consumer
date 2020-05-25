@@ -8,7 +8,7 @@ public class Topic {
 
     private File topicFile;
     private TopicWriter topicWriter;
-    private HashMap<String, TopicReader> topicReaders;
+    private volatile HashMap<String, TopicReader> topicReaders;
 
     Topic(String name) {
         this.name = name;
@@ -22,7 +22,7 @@ public class Topic {
         return topicFile;
     }
 
-    private void addGroup(String groupName) {
+    void addGroup(String groupName) {
         topicReaders.put(groupName, new TopicReader(this, groupName));
     }
 
@@ -31,9 +31,6 @@ public class Topic {
      * @return the value of the first remained item.
      */
     public int getValue(String groupName, String consumerName) {
-        if(!topicReaders.containsKey(groupName)) {
-            addGroup(groupName);
-        }
 
         return topicReaders.get(groupName).getValue(consumerName);
     }

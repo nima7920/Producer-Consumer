@@ -1,6 +1,7 @@
 package Consumer;
 
 import Broker.MessageBroker;
+import Broker.NoSuchTopicException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,6 +25,12 @@ public class ConsumerGroup extends Thread{
         this.groupName = groupName;
         this.numberOfConsumers = numberOfConsumers;
         consumers = new ArrayList<>();
+// my code
+        try {
+            this.messageBroker.addConsumerGroup(this.groupName, this.topicName);
+        } catch (NoSuchTopicException e) {
+
+        }
     }
 
     private void initialize() throws FileNotFoundException {

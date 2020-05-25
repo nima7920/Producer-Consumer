@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c85b72ec-f38a-4360-b077-7c720c3f5342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/MessageBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/MessageBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Topic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Broker/TopicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Consumer/ConsumerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consumer/ConsumerGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Producer/ProducerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producer/ProducerGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,20 +94,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590391655103</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="getValue method in TopicReader completed">
+      <created>1590394563283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590394563283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Methods reNamed" />
     <MESSAGE value="Producers fixed , data files edited" />
     <MESSAGE value="raf created in TopicReader,condition added to ConsumerGroup&#10;bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="raf created in TopicReader,condition added to ConsumerGroup&#10;bugs fixed" />
+    <MESSAGE value="getValue method in TopicReader completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="getValue method in TopicReader completed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590391654099">
+    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590394562238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590391654099" />
+    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590394562238" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1590326964430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -117,26 +128,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590338764947" />
-    <state width="1323" height="108" key="GridCell.Tab.0.bottom" timestamp="1590393657827">
+    <state width="1323" height="274" key="GridCell.Tab.0.bottom" timestamp="1590418081245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="108" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590393657827" />
-    <state width="1323" height="108" key="GridCell.Tab.0.center" timestamp="1590393657826">
+    <state width="1323" height="274" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590418081245" />
+    <state width="1323" height="274" key="GridCell.Tab.0.center" timestamp="1590418081245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="108" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590393657826" />
-    <state width="1323" height="108" key="GridCell.Tab.0.left" timestamp="1590393657826">
+    <state width="1323" height="274" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590418081245" />
+    <state width="1323" height="274" key="GridCell.Tab.0.left" timestamp="1590418081245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="108" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590393657826" />
-    <state width="1323" height="108" key="GridCell.Tab.0.right" timestamp="1590393657826">
+    <state width="1323" height="274" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590418081245" />
+    <state width="1323" height="274" key="GridCell.Tab.0.right" timestamp="1590418081245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="108" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590393657826" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590241382951">
+    <state width="1323" height="274" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590418081245" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590394624517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590241382951" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590394624517" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590394604711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590394604711" />
     <state x="65" y="0" key="new project wizard" timestamp="1590326966446">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

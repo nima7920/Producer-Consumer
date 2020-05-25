@@ -13,7 +13,6 @@ public class TopicReader {
     // my fields
     private volatile String currentConsumer = "";
     private volatile boolean inTransaction = false;
-    private volatile int filePointer = 0;
     private Object monitor = new Object();
 
     TopicReader(Topic topic, String groupName) {
@@ -36,7 +35,7 @@ public class TopicReader {
                 if (inTransaction && !currentConsumer.equals(consumerName))
                     monitor.wait();
                 value = topicFile.readInt();
-                System.out.println(topicFile.getFilePointer() + " " + consumerName);
+                System.out.println(topicFile.getFilePointer());
                 if (value == 0) {
                     inTransaction = true;
                     currentConsumer = consumerName;

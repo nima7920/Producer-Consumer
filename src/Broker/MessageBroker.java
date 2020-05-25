@@ -11,9 +11,7 @@ public class MessageBroker {
     }
 
     public void putValue(String topic, String producerName, int value) {
-        if(!topics.containsKey(topic)) {
-            addTopic(topic);
-        }
+
         topics.get(topic).putValue(producerName, value);
     }
 
@@ -22,5 +20,15 @@ public class MessageBroker {
             throw new NoSuchTopicException(topic);
 
         return topics.get(topic).getValue(groupName,consumerName);
+    }
+
+    public void addProducerGroup(String groupName){
+        addTopic(groupName);
+    }
+
+    public void addConsumerGroup(String groupName,String topicName) throws NoSuchTopicException{
+        if(!topics.containsKey(topicName))
+            throw new NoSuchTopicException(topicName);
+        topics.get(topicName).addGroup(groupName);
     }
 }
