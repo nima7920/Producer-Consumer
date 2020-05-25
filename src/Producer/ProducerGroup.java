@@ -1,6 +1,7 @@
 package Producer;
 
 import Broker.MessageBroker;
+import Logs.Logger;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class ProducerGroup extends Thread {
     }
 
     private void initialize() {
+        Logger.getInstance().writeLog("producer group init","initializing Group "+topicName);
         for(File file: producerGroupDirectory.listFiles()) {
             producers.add(new Producer(messageBroker,topicName, file.getName(), file));
         }

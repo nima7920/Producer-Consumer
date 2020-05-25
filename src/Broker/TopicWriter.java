@@ -1,5 +1,7 @@
 package Broker;
 
+import Logs.Logger;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -65,6 +67,9 @@ public class TopicWriter {
      */
     private void startTransaction(String producerName) {
         if(transactions.containsKey(producerName)) {
+            Logger.getInstance().writeLog("error",
+                    "producer "+producerName+
+                            " is trying to start a transaction before finalizing the previous one");
             //To Do - Log the problem in finalizing previous transaction.
             commitTransaction(producerName);
         }
@@ -84,6 +89,8 @@ public class TopicWriter {
         }
         else {
             //To Do - Log the problem in committing a non-existing transaction.
+            Logger.getInstance().writeLog("error",
+                    "producer "+producerName+ " is trying to commit a non-existing transaction");
         }
     }
 
@@ -97,6 +104,8 @@ public class TopicWriter {
         }
         else {
             //To Do - Log the problem in canceling a non-existing transaction.
+            Logger.getInstance().writeLog("error",
+                    "producer "+producerName+ " is trying to cancel a non-existing transaction");
         }
     }
 

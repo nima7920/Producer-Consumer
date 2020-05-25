@@ -2,6 +2,7 @@ package Consumer;
 
 import Broker.MessageBroker;
 import Broker.NoSuchTopicException;
+import Logs.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -34,6 +35,7 @@ public class ConsumerGroup extends Thread{
     }
 
     private void initialize() throws FileNotFoundException {
+        Logger.getInstance().writeLog("consumer group init","initializing Group "+groupName);
         for(int i=0;i<numberOfConsumers;i++) {
             String consumerName = groupName + "_" + i;
             consumers.add(new Consumer(this, consumerName));
@@ -57,6 +59,8 @@ public class ConsumerGroup extends Thread{
 
     public void performAction(Consumer consumer, int value) {
         if(value>0) {
+            Logger.getInstance().writeLog("data written","value "+value +
+                    " written by "+consumer.getConsumerName()+" in group "+ groupName);
             printWriter.println("Consumer with name " + consumer.getConsumerName() + " read the value " + value);
             printWriter.flush();
         }
