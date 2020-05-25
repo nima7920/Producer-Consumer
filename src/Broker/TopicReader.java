@@ -5,27 +5,50 @@ import java.io.RandomAccessFile;
 
 public class TopicReader {
 
-    RandomAccessFile topicFile;
+    private volatile RandomAccessFile topicFile;
 
     private Topic topic;
     private String groupName;
 
+    // my fields
+    private volatile String currentConsumer = "";
+    private volatile boolean inTransaction = false;
+    private volatile int filePointer = 0;
+    private Object monitor = new Object();
+
     TopicReader(Topic topic, String groupName) {
         this.topic = topic;
-        this.groupName=groupName;
+        this.groupName = groupName;
         //To Do - Generate topicFile
-        try{
-            topicFile=new RandomAccessFile(this.topic.getTopicFile(),"r");
+        try {
+            topicFile = new RandomAccessFile(this.topic.getTopicFile(), "r");
 
-        }catch (IOException e){
+        } catch (IOException e) {
 
         }
     }
 
     public int getValue(String consumerName) {
-        int value = 0;
-        //To Do - Read next value from topicFile and return the value
-        //To Do - Handle the transaction constraints
-        return value;
+        // -3 is a rubbish value
+        synchronized (monitor) {
+            int value = 0;
+            try {
+                if (inTransaction && !currentConsumer.equals(consumerName))
+                    monitor.wait();
+                value = topicFile.readInt();
+                System.out.println(topicFile.getFilePointer() + " " + consumerName);
+                if (value == 0) {
+                    inTransaction = true;
+                    currentConsumer = consumerName;
+                } else if (value == -1) {
+                    inTransaction = false;
+                    monitor.notify();
+                }
+
+            } catch (Exception e) {
+                return -3;
+            }
+            return value;
+        }
     }
 }
