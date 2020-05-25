@@ -111,8 +111,10 @@ public class TopicWriter {
 
     public synchronized void writeValue(int value) {
         //To Do - Put the given value at the end of the topicFile
+
         try {
             buffer.writeInt(value);
+            topic.releaseEOF();
         } catch (IOException e) {
             e.printStackTrace();
         }

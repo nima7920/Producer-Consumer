@@ -28,6 +28,7 @@ public class Topic {
 
     /**
      * This method is used to get the first value in the topic file which is not read in the given group yet, and serve it for the appropriate consumer.
+     *
      * @return the value of the first remained item.
      */
     public int getValue(String groupName, String consumerName) {
@@ -37,10 +38,18 @@ public class Topic {
 
     /**
      * This method is used to put the given value at the tail of the topic file.
+     *
      * @param value the value to be put at the end of the topic file
      * @return Nothing.
      */
     public void putValue(String producerName, int value) {
         topicWriter.putValue(producerName, value);
+    }
+
+    // my code
+    void releaseEOF() {
+        for (TopicReader x : topicReaders.values()) {
+            x.releaseEOF();
+        }
     }
 }

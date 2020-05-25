@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85b72ec-f38a-4360-b077-7c720c3f5342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logs/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Broker/TopicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Broker/TopicWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broker/TopicWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Consumer/ConsumerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consumer/ConsumerGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producer/ProducerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producer/ProducerGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590418687039</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="logs added">
+      <created>1590421937528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590421937528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,13 +122,14 @@
     <MESSAGE value="raf created in TopicReader,condition added to ConsumerGroup&#10;bugs fixed" />
     <MESSAGE value="getValue method in TopicReader completed" />
     <MESSAGE value="adding and getting topics added to ProducerGroup/ConsumerGroup constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding and getting topics added to ProducerGroup/ConsumerGroup constructors" />
+    <MESSAGE value="logs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logs added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590418685961">
+    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1590421936419">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590418685961" />
+    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590421936419" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1590326964430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -136,26 +142,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590338764947" />
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1590421446662">
+    <state width="1323" height="420" key="GridCell.Tab.0.bottom" timestamp="1590424208307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590421446662" />
-    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1590421446662">
+    <state width="1323" height="420" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590424208307" />
+    <state width="1323" height="420" key="GridCell.Tab.0.center" timestamp="1590424208307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590421446662" />
-    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1590421446662">
+    <state width="1323" height="420" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590424208307" />
+    <state width="1323" height="420" key="GridCell.Tab.0.left" timestamp="1590424208306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590421446662" />
-    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1590421446662">
+    <state width="1323" height="420" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590424208306" />
+    <state width="1323" height="420" key="GridCell.Tab.0.right" timestamp="1590424208307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590421446662" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590418697712">
+    <state width="1323" height="420" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590424208307" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590421950166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590418697712" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590421950166" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590394604711">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
